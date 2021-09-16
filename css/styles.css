@@ -1,3 +1,4 @@
+/*css detail-movie y detail-serie*/
 body {
     background-image: url(../img/fondo1.jpg);
     background-repeat: no-repeat;
@@ -18,8 +19,13 @@ margin: 0 40px 0 40px;
     font-size: 21px;
 }
 
+.tituloPrincipal {
+    margin: 0;
+}
+
 .portadaPelicula {
-    width: 200px;
+    width: 100vw;
+    
     
 }
 
@@ -37,17 +43,28 @@ ul  {
 }
 
 .portadaSerie {
-    width: 20px;
+    width: 100vw;
 }
+
+.tituloSerie {
+    font-style: italic;
+    color: white;
+}
+
 .datosSerie
 {
     color: white;
-    font-size: 150%;
+    font-size: 24px;
+    
+}
+
+.tituloSerie {
+    margin: 0;
 }
 
 
 
-/* mobile first*/
+/* mobile first*/ /*detail-movie y detail-serie*/
 /*tablet*/
 @media (min-width: 768px)
 {
