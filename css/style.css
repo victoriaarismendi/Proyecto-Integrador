@@ -49,6 +49,12 @@ nav #menu{
     text-decoration: none;
 }
 
+#menu ul li a:hover{
+    color: #fd3212;
+    transition: all 0.5s ease-out;
+
+}
+
 /* principal */
 
 #principal{
@@ -105,11 +111,12 @@ nav #menu{
 #secciones section .peliculas{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 3%;
+
 }
 
 #secciones section .peliculas .pelicula{
-    width:30%;
+    width: 17%;
     margin-top: 20px;
 }
 
