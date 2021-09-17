@@ -14,6 +14,10 @@ margin: 0 40px 0 40px;
 
 }
 
+.sinopsisPelicula {
+    font-size: 24px;
+}
+
 .datosPelicula {
     color: white;
     font-size: 21px;
@@ -21,10 +25,13 @@ margin: 0 40px 0 40px;
 
 .tituloPrincipal {
     margin: 0;
+    color: white;
+    font-style: italic;
 }
 
 .portadaPelicula {
     width: 100vw;
+    height: 30vh;
     
     
 }
@@ -62,17 +69,94 @@ ul  {
     margin: 0;
 }
 
+/* css pagina géneros*/
+.tituloGeneros {
+    color: white;
+    font-size: 35px;
+    
+}
+
+.generoPeliculas {
+    color: white;
+}
+
+.generoSeries {
+    color: white;
+}
+
+.listaPelicula {
+    color: white;
+}
+
+.listaSeries {
+    color: white;
+}
 
 
 /* mobile first*/ /*detail-movie y detail-serie*/
 /*tablet*/
 @media (min-width: 768px)
-{
+{ /*pagina pelicula*/
+
+    .portadaPelicula {
+    width: 100vw;
+    height: 40vh;
+  }
+  .sinopsisPelicula {
+      font-size: 25px;
+  }
+  /*pagina serie*/
+  .portadaSerie {
+    width: 100vw;
+    height: 42vh;
+  }
+  .tituloSerie {
+    margin: 0;
+    font-size: 40px;
+  }
+  .sinopsisSerie {
+      font-size: 30px;
+  }
 
 }
 
 /*desktop*/
 @media (min-width: 1024px) {
+    /*pagina pelicula*/
+    .portadaPelicula {
+        width: 100vw;
+        height: 40vh;
+      }
 
+    .tituloPrincipal {
+        margin: 0;
+        color: white;
+        font-style: italic;
+        font-size: 45px;
+    }
+    .datosPelicula {
+        color: white;
+        font-size: 30px;
+    }
+
+    .sinopsisPelicula {
+        font-size: 32px;
+    }
+
+    /*pagina serie*/
+    .portadaSerie {
+        width: 100vw;
+        height: 45vh;
+    }
+    .tituloSerie {
+        font-size: 45px;
+    }
+    .datosSerie {
+       color: white;
+       font-size: 34px;     
+    }
+    .sinopsisSerie {
+        font-size: 40px;
+    }
 }
 
