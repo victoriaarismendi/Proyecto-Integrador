@@ -14,34 +14,51 @@ body{
     background-color: #061327;
 }
 
-nav{
+/*Header*/ 
+.navMenu{
     width:100%;
     background: #081c3c;
+    height: 150px;
     display: flex;
-
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-nav #logo{
+.logo{
     /* background: blue; */
-    width: 20%;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+.logoH1 {
+    color: white;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1.5px;
+    font-size: 30px;
+    text-align: center;
+    
 }
 
-nav #menu{
-    width: 80%;
+#menu{
+    width: 200px;
+    height: 20px;
     display: flex;
-    justify-content:flex-end;
     align-items: center;
+    justify-content: center;
+    
 }
 
 #menu ul {
     display: flex;
-    margin-right: 36px;
+    margin: 10px;
 }
 
 #menu ul li{
     align-items: center;
     list-style: none;
     margin-left: 20px;
+    font-weight: bold;
+    font-size: 13px
 }
 
 #menu ul li a{
@@ -49,50 +66,259 @@ nav #menu{
     text-decoration: none;
 }
 
-#menu ul li a:hover{
-    color: #fd3212;
-    transition: all 0.5s ease-out;
+.buscador {
+    width: 100%;
+    display: flex;
+    margin-left: 10px ;
+    margin-right: 10px;
+    justify-content: center;
+    
+}
+.formBuscador {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
 }
+.formBuscadorInput {
+    width:50%;
+    height: 35px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    background-color:white;
+    text-decoration: none;
+    color: white;
+}
+.buttonBuscador {
+    width: 100px;
+    height: 35px;
+    color: white;
+    background-color: rgb(10, 10, 51);
+    border-radius: 10px;
+}
 
-/* principal */
+/*Header Tablet*/
+@media (min-width: 768px) {
+    
+    .navMenu{
+        width:100%;
+        background: #081c3c;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo{
+
+        width: 120px;
+        margin-top: 23px;
+        margin-left: 5px;
+    }
+    .logoH1 {
+        color: white;
+        font-family: 'Bangers', cursive;
+        letter-spacing: 1.5px;
+        font-size: 31px;
+    }
+
+    #menu{
+        width: 50%;
+        display: inline-block;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 22px;
+        margin-left: 5px;
+    }
+
+    #menu ul {
+        display: flex;
+        margin: 10px;
+    }
+
+    #menu ul li{
+        align-items: center;
+        list-style: none;
+        margin-left: 20px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    #menu ul li a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .buscador {
+        width: 240px;
+        display: flex;
+        justify-content: flex-end;
+        margin-top:20px ;
+        margin-bottom:20px ;
+        margin-left:10px ;
+        margin-right: 20px;
+    }
+    .formBuscador {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+    }
+    .formBuscadorInput {
+        width: 190px;
+        height: 40px;
+        padding: 15px;
+        text-align: center;
+        border-radius: 10px;
+        background-color:white;
+        text-decoration: none;
+        color: white;
+    }
+    .buttonBuscador {
+        width: 70px;
+        height: auto;
+        color: white;
+        background-color: rgb(10, 10, 51);
+        border-radius: 10px;
+    }
+}
+/*Header Desktop*/
+@media (min-width: 1024px) {
+    
+    .navMenu{
+        background: #081c3c;
+        height: 80px;
+        display: flex;
+    }
+
+    .logo{
+        margin-top: 23px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .logoH1 {
+        color: white;
+        font-family: 'Bangers', cursive;
+        letter-spacing: 1.5px;
+        font-size: 35px;
+    }
+
+    #menu{
+        width: 400px;
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+    }
+
+    #menu ul {
+        display: flex;
+        margin-top: 30px;
+    }
+
+    #menu ul li{
+        align-items: center;
+        list-style: none;
+        margin-left: 20px;
+        font-weight: bold;
+    }
+
+    #menu ul li a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .buscador {
+        display: flex;
+        margin-top:20px ;
+        margin-bottom:20px ;
+        margin-left:100px ;
+        margin-right: 20px;
+    }
+    .formBuscador {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+    }
+    .formBuscadorInput {
+        width: 400px;
+        height: 40px;
+        padding: 15px;
+        text-align: center;
+        border-radius: 10px;
+        background-color:white;
+        text-decoration: none;
+        color: white;
+    }
+    .buttonBuscador {
+        width: 100px;
+        height: auto;
+        color: white;
+        background-color: rgb(10, 10, 51);
+        border-radius: 10px;
+    }
+    
+}
+@media (min-width: 1200px) {
+    .formBuscadorInput {
+        width: 50%;
+        height: 40px;
+        padding: 15px;
+        text-align: center;
+        border-radius: 10px;
+        background-color: white;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+
+
+/*Footer*/
+.mainFooter{
+    background: #081c3c;
+    margin-top: 100px;
+    color:white;
+    font-size: 13px;
+    text-align: center;
+}
+.listaFooter {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    line-height: 20px;
+}
+
+.integrantes {
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.integrantesList {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.titulo {
+    font-size: 15px;
+    margin-top: 10px;
+}
+.footerRedes li a i {
+    margin-top: 10px;
+    color: white;
+}
+
+
+
+
 
 #principal{
     width: 90%;
     margin: 0 auto;
     margin-top: 50px;
-}
-
-
-#buscador{
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      padding-top:20px ;
-      padding-bottom:20px ;
-      padding-left:50px ;
-      padding-right:50px ;
-  }
-
-#buscador form {
-    width:60%;
-}
-
-#buscador form h1{
-    color:white;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
-#buscador form input{
-     width:100%;
-     padding: 15px;
-     text-align: center;
-     border-radius: 10px;
-}
-
-#buscador input:focus{
-    outline: none;
 }
 
 #secciones{
