@@ -1,233 +1,395 @@
-/*css detail-movie y detail-serie*/
-body {
-    background-image: url(../img/fondo1.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
     padding: 0;
-}
-
-/* css para el detalle de la película*/
-
-.centroPelicula {
-margin: 0 40px 0 40px;
-
-}
-
-.sinopsisPelicula {
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    line-height: 28px;
-}
-
-.datosPelicula {
-    color: white;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.tituloPrincipal {
     margin: 0;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+    box-sizing: border-box;
 }
 
-.portadaPelicula {
-    width: 100vw;
-    height: 30vh;
-   
+html{
+    font-family: 'Lato', sans-serif;
 }
 
-ul{
-    padding: 0;
+body{
+    background-color: #061327;
 }
 
-.listaDetalle  {
+/*Header*/ 
+.navMenu{
+    width:100%;
+    background: #081c3c;
+    height: 150px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    list-style: none;
-    justify-content: space-around;
-    
-    
 }
 
-/* css para el detalle de la serie */
-.centroSerie {
-    margin: 0 40px 0 40px; /*preguntar si tambien uso el viewport*/
+.logo{
+    /* background: blue; */
+    display: block;
+    width: 100%;
+    margin-top: 20px;
 }
-
-.portadaSerie {
-    width: 100vw;
-}
-
-.tituloSerie {
-    font-family: 'Roboto', sans-serif;
+.logoH1 {
     color: white;
-    margin: 0;
-    font-weight: bold;
-}
-
-.datosSerie
-{
-    color: white;
-    font-size: 23px;
-    font-family: 'Roboto', sans-serif;
-}
-
-
-/* css pagina géneros*/
-.tituloGeneros {
-    color: white;
-    font-size: 35px;
-    
-}
-
-.generoPeliculas {
-    color: white;
-}
-
-.generoSeries {
-    color: white;
-}
-
-.listaPelicula {
-    color: white;
-}
-
-.listaSeries {
-    color: white;
-}
-
-/*css pagina de generos*/
-.centroGenero {
-    margin: 0px 30px;
-}
-.tituloGeneros {
-    text-align: center;
-    margin: 0;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1.5px;
     font-size: 30px;
-}
-.generoPeliculas {
-    margin: 10px;
-    font-size: 22px;
-}
-
-.listaPelicula {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin: 12px;
-}
-
-.generoSeries {
-    margin: 10px;
-    font-size: 22px;
-}
-
-.listaSeries {
-    list-style: none;
-    margin: 12px;
-
-}
-
-.genero {
-    border: solid 3px #061935c2;
-    background-color: #081c3c;
+    text-align: center;
     
 }
 
-
-
-/* mobile first*/ /*detail-movie y detail-serie*/
-/*tablet*/
-@media (min-width: 768px)
-{ /*pagina pelicula*/
-
-    .portadaPelicula {
-    width: 100vw;
-    height: 60vh;
-  }
-  .sinopsisPelicula {
-      font-size: 25px;
-  }
-  /*pagina serie*/
-  .portadaSerie {
-    width: 100vw;
-    height: 42vh;
-  }
-  .tituloSerie {
-    margin: 0;
-    font-size: 40px;
-  }
-  .sinopsisSerie {
-      font-size: 30px;
-  }
-  /*pagina generos*/
-  .genero {
-      font-size: 17px;
-  }
-
+#menu{
+    width: 200px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
-/*desktop*/
+#menu ul {
+    display: flex;
+    margin: 10px;
+}
+
+#menu ul li{
+    align-items: center;
+    list-style: none;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 13px
+}
+
+#menu ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.buscador {
+    width: 100%;
+    display: flex;
+    margin-left: 10px ;
+    margin-right: 10px;
+    justify-content: center;
+    
+}
+.formBuscador {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.formBuscadorInput {
+    width:50%;
+    height: 35px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    background-color:white;
+    text-decoration: none;
+    color: white;
+}
+.buttonBuscador {
+    width: 100px;
+    height: 35px;
+    color: white;
+    background-color: rgb(10, 10, 51);
+    border-radius: 10px;
+}
+
+/*Header Tablet*/
+@media (min-width: 768px) {
+    
+    .navMenu{
+        width:100%;
+        background: #081c3c;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo{
+
+        width: 120px;
+        margin-top: 23px;
+        margin-left: 5px;
+    }
+    .logoH1 {
+        color: white;
+        font-family: 'Bangers', cursive;
+        letter-spacing: 1.5px;
+        font-size: 31px;
+    }
+
+    #menu{
+        width: 50%;
+        display: inline-block;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 22px;
+        margin-left: 5px;
+    }
+
+    #menu ul {
+        display: flex;
+        margin: 10px;
+    }
+
+    #menu ul li{
+        align-items: center;
+        list-style: none;
+        margin-left: 20px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    #menu ul li a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .buscador {
+        width: 240px;
+        display: flex;
+        justify-content: flex-end;
+        margin-top:20px ;
+        margin-bottom:20px ;
+        margin-left:10px ;
+        margin-right: 20px;
+    }
+    .formBuscador {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+    }
+    .formBuscadorInput {
+        width: 190px;
+        height: 40px;
+        padding: 15px;
+        text-align: center;
+        border-radius: 10px;
+        background-color:white;
+        text-decoration: none;
+        color: white;
+    }
+    .buttonBuscador {
+        width: 70px;
+        height: auto;
+        color: white;
+        background-color: rgb(10, 10, 51);
+        border-radius: 10px;
+    }
+}
+/*Header Desktop*/
 @media (min-width: 1024px) {
-    /*pagina pelicula*/
-    .portadaPelicula {
-        width: 100vw;
-        height: 60vh;
-      }
+    
+    .navMenu{
+        background: #081c3c;
+        height: 80px;
+        display: flex;
+    }
 
-    .tituloPrincipal {
-        margin: 0;
+    .logo{
+        margin-top: 23px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .logoH1 {
         color: white;
-        font-style: italic;
-        font-size: 45px;
+        font-family: 'Bangers', cursive;
+        letter-spacing: 1.5px;
+        font-size: 35px;
     }
-    .datosPelicula {
+
+    #menu{
+        width: 400px;
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+    }
+
+    #menu ul {
+        display: flex;
+        margin-top: 30px;
+    }
+
+    #menu ul li{
+        align-items: center;
+        list-style: none;
+        margin-left: 20px;
+        font-weight: bold;
+    }
+
+    #menu ul li a{
         color: white;
-        font-size: 30px;
+        text-decoration: none;
     }
 
-    .sinopsisPelicula {
-        font-size: 32px;
+    .buscador {
+        display: flex;
+        margin-top:20px ;
+        margin-bottom:20px ;
+        margin-left:100px ;
+        margin-right: 20px;
     }
+    .formBuscador {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
 
-    /*pagina serie*/
-    .portadaSerie {
-        width: 100vw;
-        height: 45vh;
-         
     }
-    .tituloSerie {
-        font-size: 45px;
+    .formBuscadorInput {
+        width: 400px;
+        height: 40px;
+        padding: 15px;
+        text-align: center;
+        border-radius: 10px;
+        background-color:white;
+        text-decoration: none;
+        color: white;
     }
-    .datosSerie {
-       color: white;
-       font-size: 34px;     
+    .buttonBuscador {
+        width: 100px;
+        height: auto;
+        color: white;
+        background-color: rgb(10, 10, 51);
+        border-radius: 10px;
     }
-    .sinopsisSerie {
-        font-size: 40px;
+    
+}
+@media (min-width: 1200px) {
+    .formBuscadorInput {
+        width: 50%;
+        height: 40px;
+        padding: 15px;
+        text-align: center;
+        border-radius: 10px;
+        background-color: white;
+        text-decoration: none;
+        color: white;
     }
+}
 
-    /*pagina géneros*/
-    .tituloGeneros {
-        font-size: 36px;
-        margin: 15px 0px;
-    }
-    .generoPeliculas {
-        font-size: 28px;
-    }
-    .generoSeries {
-        font-size: 28px;
-    }
 
-    .genero {
-        font-size: 22px;
-        border: solid 6px #061935c2;
-    }
+
+/*Footer*/
+.mainFooter{
+    background: #081c3c;
+    margin-top: 100px;
+    color:white;
+    font-size: 13px;
+    text-align: center;
+}
+.listaFooter {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    line-height: 20px;
+}
+
+.integrantes {
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.integrantesList {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.titulo {
+    font-size: 15px;
+    margin-top: 10px;
+}
+.footerRedes li a i {
+    margin-top: 10px;
+    color: white;
+}
+
+
+
+
+
+#principal{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#secciones{
+    margin-top: 25px;
+}
+
+#secciones section{
+    margin-bottom: 25px;
+}
+
+#secciones section h1{
+    color:white;
+    margin-bottom: 25px;
+}
+
+#secciones section .peliculas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
 
 }
 
+#secciones section .peliculas .pelicula{
+    width: 17%;
+    margin-top: 20px;
+}
+
+#secciones section .peliculas .pelicula img{
+    width:100%;
+}
+
+/*footer*/
+
+footer{
+    background: #081c3c;
+    margin-top: 100px;
+    color:white;
+    padding:20px;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+/* Responsive */
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav #logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav #menu{
+        width: 100%;
+    }
+    
+    nav #menu ul{
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    #buscador form {
+        width:100%;
+    }
+
+    #secciones section .peliculas .pelicula{
+        width:45%;
+        margin: 5px;
+    }
+}
